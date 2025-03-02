@@ -1,1 +1,17 @@
 @import "tailwindcss";
+@theme {
+    /*--color-cooper-100: #FAD9C1;*/
+    --color-copper-200: #F6C8A4;
+    --color-copper-300: #F2B786;
+    --color-copper-400: #EEA669;
+    --color-copper-500: #E9944C;
+    --color-copper-600: #D17F3E;
+    --color-copper-700: #B96A31;
+    --color-copper-800: #A15524;
+    --color-copper-900: #8A4018;
+    --color-copper-dark: #8A4018;
+
+    --font-serif: Times, serif;
+
+    --spacing-8xl: 108rem;
+}
