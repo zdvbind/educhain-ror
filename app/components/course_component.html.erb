@@ -1,0 +1,12 @@
+<div class="<%= content %>">
+  <h2><%= @counter + 1 %>. <%= @item.title %></h2>
+  <h4><%=  number_to_currency(@item.price, :unit => "€") %></h4>
+  <h4><%= @item.location %></h4>
+  <p><a href="#" class="no-underline text-blue-600 hover:underline"> <%= @notice %></a></p>
+  <h2>First? <%= @iteration.first? %></h2>
+  <h2>Index in collection: <%= @iteration.index %></h2>
+  <div class="flex items-center">
+    <%= render(DiscountComponent.new(item: @item)) %>
+  </div>
+  <%= EnrolleeComponent.new.total_enrollees(@item) %>
+</div>

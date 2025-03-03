@@ -1,0 +1,13 @@
+<%= render ListComponent.new do |c| %>
+  <% c.with_header do %>
+    <%= link_to "List of Available Courses", root_path %>
+  <% end %>
+
+  <% course_titles = Course.all.pluck(:title).map { |title| {title: title}} %>
+
+  <%= c.with_titles(course_titles) %>
+<% end %>
+
+<%= render(CourseComponent.with_collection(Course.all, notice: "Bye me")) do%>
+  bg-amber-50 block my-3 w-sm
+<% end %>
